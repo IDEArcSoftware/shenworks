@@ -88,6 +88,15 @@ document.addEventListener("DOMContentLoaded", () => {
     "hero.meta3.body":
       "2020’den bu yana İstanbul’dan Bulgaristan’a uzanan master plan teslimleri.",
     "hero.meta3.title": "600 bin m²",
+    "hero.pill1.body":
+      "Promenadları, yağmur suyu ekolojilerini ve ulaşım aktarmalarını iç içe geçirerek kent akışını hızlandırıyoruz.",
+    "hero.pill1.title": "Kıyı hareketlilik sistemleri",
+    "hero.pill2.body":
+      "Otel ve belediye briflerini dokunsal bahçelere, meydanlara ve kıyı destinasyonlarına çeviriyoruz.",
+    "hero.pill2.title": "Misafirperverlik ve kamusal deneyimler",
+    "hero.pill3.body":
+      "Belediyeler ve geliştiriciler belirsizlik olmadan inşa edebilsin diye BIM/CAD, bitkilendirme ve fazlamayı koordine ediyoruz.",
+    "hero.pill3.title": "Uygulamaya hazır teslimatlar",
     "hero.panel1.area.label": "Alan",
     "hero.panel1.area.value": "4.300 m² kamusal alan + 6.100 m kıyı hattı",
     "hero.panel1.body":
@@ -295,6 +304,15 @@ document.addEventListener("DOMContentLoaded", () => {
     "hero.meta3.body":
       "мастер планови испорачани од Истанбул до Бугарија од 2020 година.",
     "hero.meta3.title": "600 илјади м²",
+    "hero.pill1.body":
+      "Ги спојуваме шеталиштата, водните екологии и транспортните јазли за градовите да се движат без застој.",
+    "hero.pill1.title": "Системи за мобилност и крајбрежје",
+    "hero.pill2.body":
+      "Хотелските и општинските брифови ги претвораме во тактилни градини, плоштади и крајбрежни дестинации.",
+    "hero.pill2.title": "Искуства за гостопримство и јавност",
+    "hero.pill3.body":
+      "Координираме BIM/CAD пакети, садење и фазирање за општините и инвеститорите да градат без непознаници.",
+    "hero.pill3.title": "Испораки подготвени за изведба",
     "hero.panel1.area.label": "Површина",
     "hero.panel1.area.value": "4.300 м² јавен простор + 6.100 м крајбрежна линија",
     "hero.panel1.body":
@@ -538,7 +556,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   let currentLanguage = "en";
-  let currentTheme = "dark";
+  let currentTheme = "light";
 
   const applyLanguage = (lang) => {
     const langCode = supportedLanguages.includes(lang) ? lang : "en";
@@ -595,13 +613,10 @@ document.addEventListener("DOMContentLoaded", () => {
   applyLanguage(initialLang);
 
   const storedThemePreference = localStorage.getItem(themeStorageKey);
-  const prefersLightScheme = window.matchMedia("(prefers-color-scheme: light)").matches;
   const initialTheme =
     storedThemePreference === "light" || storedThemePreference === "dark"
       ? storedThemePreference
-      : prefersLightScheme
-        ? "light"
-        : "dark";
+      : "light";
   applyTheme(initialTheme);
 
   if (themeToggle) {

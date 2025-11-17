@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -57,57 +57,83 @@
       >
         <span></span>
         <span></span>
+        <span></span>
       </button>
     </header>
 
     <main>
-      <section class="hero" id="home">
-        <div class="section-inner hero-shell hero-content">
-          <div class="hero-copy" data-reveal>
-            <p class="eyebrow" data-i18n="hero.eyebrow">
-              Landscape architecture studio — Istanbul & beyond
-            </p>
-            <h1 data-i18n="hero.heading">
-              Designing resilient public realms, waterfronts, hospitality gardens,
-              and communities.
-            </h1>
-            <p class="lead" data-i18n="hero.lead">
-              ShenWorks is led by landscape architect <strong>Şenay Şaşko</strong>
-              and delivers multi-scalar projects that choreograph movement,
-              planting, and urban systems for municipalities, developers, and
-              cultural institutions across Turkey and Europe.
-            </p>
-            <div class="hero-cta">
-              <a class="button button-primary" href="#projects" data-i18n="hero.cta.primary"
-                >Explore recent work</a
-              >
-              <a
-                class="button button-ghost"
-                href="mailto:info@shen.works"
-                data-i18n="hero.cta.secondary"
-                >Request the full dossier</a
-              >
+      <section class="hero" id="home" aria-labelledby="hero-heading">
+        <div class="section-inner hero-content">
+          <span class="hero-ticker" data-i18n="hero.eyebrow">
+            Landscape architecture studio — Istanbul & beyond
+          </span>
+          <div class="hero-grid">
+            <div class="hero-lede" data-reveal>
+              <h1 id="hero-heading" data-i18n="hero.heading">
+                Designing resilient public realms, waterfronts, hospitality gardens,
+                and communities.
+              </h1>
+              <p class="lead" data-i18n="hero.lead">
+                ShenWorks is led by landscape architect <strong>Şenay Şaşko</strong>
+                and delivers multi-scalar projects that choreograph movement,
+                planting, and urban systems for municipalities, developers, and
+                cultural institutions across Turkey and Europe.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#projects" data-i18n="hero.cta.primary"
+                  >Explore recent work</a
+                >
+                <a
+                  class="button button-ghost"
+                  href="mailto:info@shen.works"
+                  data-i18n="hero.cta.secondary"
+                  >Request the full dossier</a
+                >
+              </div>
             </div>
-            <ul class="hero-meta">
-              <li>
-                <h3 data-i18n="hero.meta1.title">18+ years</h3>
-                <p data-i18n="hero.meta1.body">
+            <div class="hero-metrics" data-reveal>
+              <article class="hero-metric">
+                <span class="hero-metric-value" data-i18n="hero.meta1.title">18+ years</span>
+                <p class="hero-metric-body" data-i18n="hero.meta1.body">
                   of continuous practice in civic, hospitality, and residential landscapes.
                 </p>
-              </li>
-              <li>
-                <h3 data-i18n="hero.meta2.title">6,100 m</h3>
-                <p data-i18n="hero.meta2.body">
+              </article>
+              <article class="hero-metric">
+                <span class="hero-metric-value" data-i18n="hero.meta2.title">6,100 m</span>
+                <p class="hero-metric-body" data-i18n="hero.meta2.body">
                   of waterfront mobility strategy shaped along the Golden Horn.
                 </p>
-              </li>
-              <li>
-                <h3 data-i18n="hero.meta3.title">600k m²</h3>
-                <p data-i18n="hero.meta3.body">
+              </article>
+              <article class="hero-metric">
+                <span class="hero-metric-value" data-i18n="hero.meta3.title">600k m²</span>
+                <p class="hero-metric-body" data-i18n="hero.meta3.body">
                   master plans delivered from Istanbul to Bulgaria since 2020.
                 </p>
-              </li>
-            </ul>
+              </article>
+            </div>
+          </div>
+          <div class="hero-pill-grid" data-reveal>
+            <article class="hero-pill">
+              <h3 data-i18n="hero.pill1.title">Mobility &amp; waterfront systems</h3>
+              <p data-i18n="hero.pill1.body">
+                Interweave promenades, stormwater ecologies, and transit interfaces that keep
+                waterfront districts moving.
+              </p>
+            </article>
+            <article class="hero-pill">
+              <h3 data-i18n="hero.pill2.title">Hospitality &amp; civic experiences</h3>
+              <p data-i18n="hero.pill2.body">
+                Translate resort, museum, and municipal briefs into immersive planting journeys
+                and placemaking moments.
+              </p>
+            </article>
+            <article class="hero-pill">
+              <h3 data-i18n="hero.pill3.title">Implementation-ready delivery</h3>
+              <p data-i18n="hero.pill3.body">
+                Coordinate BIM/CAD packages, planting schedules, and phasing guidance so clients
+                can build without guesswork.
+              </p>
+            </article>
           </div>
         </div>
       </section>
