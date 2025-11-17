@@ -1,0 +1,35 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+node_modules/
+jspm_packages/
+bower_components/
+
+# Build outputs
+dist/
+build/
+public/build/
+tmp/
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+
+# Testing & coverage
+coverage/
+*.lcov
+
+# Editors & IDEs
+.vscode/
+.idea/
+*.swp
